@@ -1,28 +1,63 @@
-body, html {
-  height: 100%;
+/* -------------------------------
+   STYLE MAGAZINE FÉMININ EN LIGNE
+   ------------------------------- */
+
+/* Import de typographies élégantes */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+:root {
+  --rose-pale: #f8d7e3;
+  --rose: #f4a6c6;
+  --gris-clair: #f9f9f9;
+  --gris-texte: #555;
+  --noir: #222;
+  --accent: #d96b8b;
 }
 
-.bg {
-  /* The image used */
-  background-image: url("https://wallpapers.com/images/high/professional-background-zwg2tp6zyjk04j2j.webp");
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* Mise en page globale */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--gris-clair);
+  color: var(--gris-texte);
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
 }
 
+/* Conteneur principal */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Titres principaux du magazine */
 h1 {
-    color: linear-gradient(to top, white, black);
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  text-align: center;
+  color: var(--noir);
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
 }
 
 h2 {
-    color: linear-gradient(to top, white, black);
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: var(--accent);
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid var(--rose);
+  display: inline-block;
+  padding-bottom: 0.2rem;
 }
 
-p {
-    color: linear-gradient(to top, white, black);
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  color: var(--noir);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
+
+/* Paragraphes */
