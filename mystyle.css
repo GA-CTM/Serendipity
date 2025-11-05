@@ -1,6 +1,10 @@
 html {
-    background-image: linear-gradient(to top, black, #9EEBDC);
+    /*background-image: linear-gradient(to top, black, #9EEBDC);*/
     color: white;
+}
+
+body {
+  background-image: url("https://wallpapers.com/images/high/professional-background-zwg2tp6zyjk04j2j.webp");
 }
 
 h1 {
