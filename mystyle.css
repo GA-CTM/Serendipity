@@ -4,9 +4,13 @@ html {
 }
 
 h1 {
-    color: white;
+    color: linear-gradient(to top, white, black);
 }
 
 h2 {
-    color: white;
+    color: linear-gradient(to top, white, black);
+}
+
+p {
+    color: linear-gradient(to top, white, black);
 }
