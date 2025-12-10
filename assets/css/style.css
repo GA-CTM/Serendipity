@@ -61,9 +61,6 @@ body, html {
 
 .header-image {
   position:relative;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../img/wallpaper.jpg");
   min-height: 75%;
 }
 
