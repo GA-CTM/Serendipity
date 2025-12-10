@@ -60,8 +60,9 @@ body, html {
 }
 
 .header-image {
+  width: 100%; 
+  max-width: 1000px;
   position: relative;
-  background-image: url("assets/img/wallpaper.jpg"); /* chemin relatif depuis index.html */
   background-size: cover;        /* occupe toute la largeur et la hauteur du header */
   background-position: center;   /* centre l'image */
   background-repeat: no-repeat;  /* pas de répétition */
