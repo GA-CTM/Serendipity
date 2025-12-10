@@ -61,7 +61,6 @@ body, html {
 
 .header-image {
   position: relative;
-  width: 100%;          /* largeur du header = largeur écran */
 }
 
 /* CONTAINER */
