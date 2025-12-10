@@ -62,8 +62,12 @@ body, html {
 .header-image {
   position: absolute;
   width: 100%;
-  min-height: 60vh;     /* hauteur du header */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   overflow: hidden;     /* empêche l'image de dépasser */
+  min-height: 75%;
+  object-fit: cover;               /* couvre tout le header sans déformation */
 }
 
 /* CONTAINER */
