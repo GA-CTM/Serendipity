@@ -61,6 +61,9 @@ body, html {
 
 .header-image {
   position: relative;
+  width: 100%;
+  min-height: 60vh;     /* hauteur du header */
+  overflow: hidden;     /* empêche l'image de dépasser */
 }
 
 /* CONTAINER */
@@ -95,9 +98,14 @@ body, html {
 
 /* IMAGES */
 .img-full {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centre l'image */
   width: 100%;
-  max-width: 1000px;
-  margin-top: 20px;
+  height: 100%;
+  object-fit: cover;               /* couvre tout le header sans déformation */
+  z-index: -1;                     /* derrière le texte */
 }
 
 /* FOOTER */
