@@ -60,7 +60,7 @@ body, html {
 }
 
 .header-image {
-  position: relative;
+  position: absolute;
   width: 100%;
   min-height: 60vh;     /* hauteur du header */
   overflow: hidden;     /* empêche l'image de dépasser */
