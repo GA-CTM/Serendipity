@@ -62,8 +62,6 @@ body, html {
 .header-image {
   position: relative;
   width: 100%;          /* largeur du header = largeur écran */
-  min-height: 60vh;     /* hauteur visible du header */
-  overflow: hidden;     /* pour éviter que l'image dépasse */
 }
 
 /* CONTAINER */
