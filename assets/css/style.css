@@ -3,13 +3,114 @@ body, html {
   font-family: "Inconsolata", sans-serif;
 }
 
-.bgimg {
+/* -------------------------- */
+/* Remplacement des classes W3 */
+/* -------------------------- */
+
+/* NAVIGATION */
+.topbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #000;
+  z-index: 1000;
+}
+
+.row {
+  display: flex;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.nav-btn {
+  display: block;
+  padding: 12px 0;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background: black;
+}
+
+.nav-btn:hover {
+  background: #333;
+}
+
+/* HEADER */
+
+.center-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header-title {
+  font-size: 90px;
+  color: black;
+}
+
+/* PAGE BACKGROUND */
+.page-bg {
+  background: #f5f0e6;   /* équivalent w3-sand */
+  filter: grayscale(30%);
+  font-size: 20px;        /* w3-large */
+}
+
+.header-image {
+  position:relative;
   background-position: center;
   background-size: cover;
-  background-image: url("Serendipity/assets/img/wallpaper.jpg");
+  background-image: url("wallpaper.jpg");
   min-height: 75%;
 }
 
-.menu {
-  display: none;
+/* CONTAINER */
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  max-width: 700px;
+}
+
+.title-section {
+  text-align: center;
+  padding: 64px 0;
+}
+
+.tag {
+  background: black;
+  color: white;
+  padding: 8px 16px;
+  letter-spacing: 2px;
+}
+
+/* LEFTBAR BOX */
+.leftbar-box {
+  border-left: 6px solid #ccc;
+  background: #eee;
+  padding: 16px;
+  margin: 20px 0;
+}
+
+/* IMAGES */
+.img-full {
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 20px;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  background: #eee;
+  padding: 48px 0;
+}
+
+.footer-link:hover {
+  color: #4CAF50;
 }
