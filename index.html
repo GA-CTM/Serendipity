@@ -4,168 +4,54 @@
   <title>Serendipity</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Liens vers les feuilles de style externes -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Feuilles de style -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <nav>
-  <!-- Links (sit on top) -->
-<div class="w3-top">
-  <div class="w3-row w3-padding w3-black">
-    <div class="w3-col s3">
-      <a href="index.html" class="w3-button w3-block w3-black">ACCUEIL</a>
+  <div class="topbar">
+    <div class="row">
+      <div class="col-3"><a href="index.html" class="nav-btn">ACCUEIL</a></div>
+      <div class="col-3"><a href="fashion.html" class="nav-btn">MODE</a></div>
+      <div class="col-3"><a href="well-being.html" class="nav-btn">BIEN-ETRE</a></div>
+      <div class="col-3"><a href="social.html" class="nav-btn">RELATIONS</a></div>
     </div>
-    <div class="w3-col s3">
-      <a href="fashion.html" class="w3-button w3-block w3-black">MODE</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="well-being.html" class="w3-button w3-block w3-black">BIEN-ETRE</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="social.html" class="w3-button w3-block w3-black">RELATIONS</a>
-    </div>
-    <!--
-    <div class="w3-col s2">
-      <a href="#where" class="w3-button w3-block w3-black">ACTIVITIES</a>
-    </div>
-    <div class="w3-col s2">
-      <a href="#where" class="w3-button w3-block w3-black">POP-CULTURE</a>
-    </div>
-    -->
   </div>
-</div>
 </nav>
 
 <!-- Header with image -->
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
-  <!-- Horaires inutilisées
-  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-    <span class="w3-tag">Open from 6am to 5pm</span>
-  </div>
-    -->
-  <div class="w3-display-middle w3-center">
-    <span class="w3-text-black" style="font-size:90px">Serendipity</span>
-  </div>
-  <div class="w3-display-bottomright w3-center w3-padding-large">
-    <span class="w3-text-white">15 Adr street, 5015</span>
+<header class="header-image" id="home">
+  <div class="center-middle">
+    <span class="header-title">Serendipity</span>
   </div>
 </header>
 
-<!-- Add a background color and large text to the whole page -->
-<div class="w3-sand w3-grayscale w3-large">
+<div class="page-bg">
+  
+<div class="container">
+  <div class="content">
+    <h5 class="title-section"><span class="tag">Serendipity, all you need!</span></h5>
 
-<!-- About Container -->
-<div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Serendipity, all you need!</span></h5>
-    <p>Serendipity est un espace dédié au bien-être du corps et de l'esprit. Découvrez des articles inspirants, des rituels apaisants et des astuces simples pour cultiver l'équilibre, la sérénité et la beauté intérieure au quotidien.</p>
-    <div class="w3-panel w3-leftbar w3-light-grey">
+    <p>Serendipity est un espace dédié au bien-être du corps et de l'esprit...</p>
+
+    <div class="leftbar-box">
       <p><i>L'expérience Serendipity</i></p>
-      <p>Bienvenue dans notre zone consacrée à la qualité de vie, un endroit où nous étudions tout ce qui favorise l'épanouissement, l'équilibre et l'harmonie personnelle. Nous traitons le bien-être dans toutes ses facettes : psychologique, affective, corporelle, sociale et professionnelle, en vous offrant des astuces concrètes, des pensées et des outils pour alimenter chaque dimension de votre existence. Cette page vise à vous éclairer sur la véritable signification de prendre soin de soi, en dépassant les modes et les préjugés. Nous essaierons d'apporter des réponses à diverses interrogations que vous pourriez avoir sur ce thème : comment améliorer la qualité de votre sommeil, gérer le stress, consolider vos liens relationnels, développer la pleine conscience ou instaurer des routines bénéfiques pour votre santé. C'est un manuel pour métamorphoser la vie quotidienne en une aventure vers une plus grande sérénité et vitalité.</p>
+      <p>Bienvenue dans notre zone consacrée à la qualité de vie...</p>
     </div>
-    <img src="assets/img/image1.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+
+    <img src="image1.jpg" class="img-full">
   </div>
 </div>
 
-<!-- Menu Container -->
-<div class="w3-container" id="menu">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
-
-    <div class="w3-row w3-center w3-card w3-padding">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
-        <div class="w3-col s6 tablink">Eat</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-        <div class="w3-col s6 tablink">Drink</div>
-      </a>
-    </div>
-
-    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Bread Basket</h5>
-      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
-
-      <h5>Honey Almond Granola with Fruits</h5>
-      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
-
-      <h5>Belgian Waffle</h5>
-      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
-
-      <h5>Scrambled eggs</h5>
-      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-
-      <h5>Blueberry Pancakes</h5>
-      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
-    </div>
-
-    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Coffee</h5>
-      <p class="w3-text-grey">Regular coffee 2.50</p><br>
-
-      <h5>Chocolato</h5>
-      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
-
-      <h5>Corretto</h5>
-      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
-
-      <h5>Iced tea</h5>
-      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
-
-      <h5>Soda</h5>
-      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
-    </div>  
-    <img src="assets/img/img2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
-  </div>
 </div>
 
-<!-- Contact/Area Container 
-<div class="w3-container" id="where" style="padding-bottom:32px;">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
-    <p>Find us at some address at some place.</p>
-    <img src="img3.jpg" class="w3-image" style="width:100%">
-    <p><span class="w3-tag">FYI!</span> We offer full-service catering...</p>
-    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" required name="date" value="2020-11-16T20:00"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
-    </form>
-  </div>
-</div>
--->
-
-<!-- End page content -->
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-  <p><a href="https://github.com/" target="_blank" class="w3-hover-text-green">Mentions légales</a> | Copyright © Tous droits réservés | Contact</p>
+<footer class="footer">
+  <p><a href="#" target="_blank" class="footer-link">Mentions légales</a> |
+  Copyright © Tous droits réservés | Contact</p>
 </footer>
-
-<script>
-  // Tabbed Menu
-  function openMenu(evt, menuName) {
-    var i, x, tablinks;
-    x = document.getElementsByClassName("menu");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < x.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-    }
-    document.getElementById(menuName).style.display = "block";
-    evt.currentTarget.firstElementChild.className += " w3-dark-grey";
-  }
-  document.getElementById("myLink").click();
-</script>
 
 </body>
 </html>
