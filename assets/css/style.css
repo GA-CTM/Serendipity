@@ -60,13 +60,11 @@ body, html {
 }
 
 .header-image {
-  width: 100%; 
-  max-width: 1000px;
-  position: relative;
-  background-size: cover;        /* occupe toute la largeur et la hauteur du header */
-  background-position: center;   /* centre l'image */
-  background-repeat: no-repeat;  /* pas de répétition */
-  min-height: 60vh;              /* hauteur visible du header */
+  position:relative;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../assets/img/wallpaper.jpg");
+  min-height: 75%;
 }
 
 /* CONTAINER */
