@@ -60,9 +60,14 @@ body, html {
 }
 
 .header-image {
-  position:relative;
-  min-height: 75%;
+  position: relative;
+  background-image: url("assets/img/wallpaper.jpg"); /* chemin relatif depuis index.html */
+  background-size: cover;        /* occupe toute la largeur et la hauteur du header */
+  background-position: center;   /* centre l'image */
+  background-repeat: no-repeat;  /* pas de répétition */
+  min-height: 60vh;              /* hauteur visible du header */
 }
+
 
 /* CONTAINER */
 .container {
