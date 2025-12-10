@@ -61,13 +61,11 @@ body, html {
 
 .header-image {
   position: relative;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  overflow: hidden;     /* empêche l'image de dépasser */
-  min-height: 60vh;     /* hauteur du header */
-  object-fit: cover;               /* couvre tout le header sans déformation */
+  background-image: url("assets/img/wallpaper.jpg"); /* chemin relatif depuis index.html */
+  background-size: cover;        /* occupe toute la largeur et la hauteur du header */
+  background-position: center;   /* centre l'image */
+  background-repeat: no-repeat;  /* pas de répétition */
+  min-height: 60vh;              /* hauteur visible du header */
 }
 
 /* CONTAINER */
